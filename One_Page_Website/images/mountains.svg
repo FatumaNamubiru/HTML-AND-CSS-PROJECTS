@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="mountainSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#72c7ff"/>
+      <stop offset="100%" stop-color="#e7f7ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#mountainSky)"/>
+  <circle cx="665" cy="90" r="48" fill="#ffe49a"/>
+  <polygon points="70,350 285,90 465,350" fill="#6b7c8f"/>
+  <polygon points="260,350 500,70 730,350" fill="#52687d"/>
+  <polygon points="175,223 285,90 373,217 327,197 285,226 244,197" fill="#ffffff"/>
+  <polygon points="391,197 500,70 610,202 558,179 500,220 449,180" fill="#ffffff"/>
+  <rect y="350" width="800" height="150" fill="#75c8d8"/>
+  <polygon points="0,390 800,390 800,500 0,500" fill="#65b9c9"/>
+  <g fill="#24583d">
+    <polygon points="40,390 85,270 130,390"/><rect x="80" y="385" width="10" height="45"/>
+    <polygon points="115,400 160,280 205,400"/><rect x="155" y="395" width="10" height="45"/>
+    <polygon points="630,395 675,275 720,395"/><rect x="670" y="390" width="10" height="45"/>
+    <polygon points="690,405 735,300 780,405"/><rect x="730" y="400" width="10" height="40"/>
+  </g>
+  <text x="32" y="55" font-family="Arial" font-size="32" font-weight="700" fill="#18324a">Canadian Rockies</text>
+</svg>

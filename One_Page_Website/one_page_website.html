@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A basic one-page travel website created for an HTML assignment.">
+    <title>Explore Canada | One-Page Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation with HTML bookmarks -->
+    <header>
+        <nav aria-label="Main navigation">
+            <a class="site-name" href="#home">Explore Canada</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pictures">Pictures</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Welcome to Canada</p>
+                <h1>Discover Beautiful Places Across Canada</h1>
+                <p>
+                    Canada is known for its beautiful cities, mountains, lakes, forests,
+                    and friendly communities. This one-page website introduces a few
+                    memorable places and makes it easy to move between sections using
+                    the navigation menu.
+                </p>
+                <a class="button" href="#pictures">View Pictures</a>
+            </div>
+        </section>
+
+        <!-- Pictures Section -->
+        <section id="pictures" class="content-section">
+            <div class="section-heading">
+                <h2>Picture Gallery</h2>
+                <p>Here are three illustrated Canadian travel scenes.</p>
+            </div>
+
+            <div class="gallery">
+                <figure>
+                    <img src="images/toronto.svg"
+                         alt="Illustration of the Toronto skyline and CN Tower">
+                    <figcaption>Toronto Skyline</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/mountains.svg"
+                         alt="Illustration of mountains, trees, and a lake">
+                    <figcaption>Canadian Mountains</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/niagara.svg"
+                         alt="Illustration of Niagara Falls with water and clouds">
+                    <figcaption>Niagara Falls</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video" class="content-section alternate">
+            <div class="section-heading">
+                <h2>Travel Video</h2>
+                <p>Watch this short embedded video directly on the webpage.</p>
+            </div>
+
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                    title="Travel and nature video"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="content-section">
+            <div class="section-heading">
+                <h2>Contact Us</h2>
+                <p>Complete the form below to ask a question or request travel information.</p>
+            </div>
+
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first_name"
+                               placeholder="Enter your first name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last_name"
+                               placeholder="Enter your last name" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="name@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="destination">Favourite Destination</label>
+                    <select id="destination" name="destination">
+                        <option value="">Choose a destination</option>
+                        <option value="toronto">Toronto</option>
+                        <option value="banff">Banff</option>
+                        <option value="niagara-falls">Niagara Falls</option>
+                        <option value="vancouver">Vancouver</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6"
+                              placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit">Submit Form</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Explore Canada. One-Page Website Assignment.</p>
+        <a href="#home">Back to Top</a>
+    </footer>
+
+</body>
+</html>

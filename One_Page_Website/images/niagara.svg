@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="fallSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a9ddff"/>
+      <stop offset="100%" stop-color="#f2fbff"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#45afd1"/>
+      <stop offset="100%" stop-color="#116d9b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#fallSky)"/>
+  <g fill="#ffffff" opacity="0.9">
+    <ellipse cx="155" cy="100" rx="80" ry="30"/>
+    <ellipse cx="215" cy="100" rx="60" ry="25"/>
+    <ellipse cx="620" cy="80" rx="85" ry="30"/>
+    <ellipse cx="680" cy="82" rx="55" ry="22"/>
+  </g>
+  <path d="M0 230 C150 190, 270 250, 400 220 C540 188, 660 235, 800 205 L800 500 L0 500 Z" fill="url(#water)"/>
+  <path d="M0 250 C120 215, 225 270, 345 235 L345 390 C255 430, 130 420, 0 375 Z" fill="#dff8ff"/>
+  <path d="M455 228 C560 202, 680 240, 800 205 L800 385 C685 430, 555 417, 455 382 Z" fill="#e9fbff"/>
+  <g fill="#ffffff" opacity="0.8">
+    <ellipse cx="330" cy="390" rx="140" ry="38"/>
+    <ellipse cx="500" cy="390" rx="165" ry="42"/>
+  </g>
+  <path d="M0 225 C150 185, 280 240, 400 215 C520 185, 670 230, 800 200" fill="none" stroke="#254b3e" stroke-width="22"/>
+  <text x="32" y="55" font-family="Arial" font-size="32" font-weight="700" fill="#18324a">Niagara Falls</text>
+</svg>
