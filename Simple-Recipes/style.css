@@ -1,0 +1,413 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --cream: #fff7ec;
+  --orange: #e66f3d;
+  --orange-dark: #ba4e25;
+  --red: #a93f35;
+  --brown: #4e342e;
+  --green: #5d7b58;
+  --text: #3b332f;
+  --muted: #766a63;
+  --white: #ffffff;
+  --line: #ead8c8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: "Nunito", sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Navigation */
+.navbar {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  color: var(--orange-dark);
+  font-size: 29px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 26px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: var(--orange);
+}
+
+/* Hero: image left, content right */
+.hero {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto 80px;
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  min-height: 570px;
+  background: var(--white);
+  border-radius: 34px;
+  overflow: hidden;
+  box-shadow: 0 18px 60px rgba(78, 52, 46, .08);
+  scroll-margin-top: 20px;
+}
+
+.hero-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  padding: 70px 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tag {
+  color: var(--orange);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.2px;
+}
+
+h1, h2, h3 {
+  color: var(--brown);
+}
+
+h1 {
+  margin: 14px 0 18px;
+  font-size: clamp(48px, 6vw, 76px);
+  line-height: .98;
+}
+
+h2 {
+  margin: 10px 0 14px;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.05;
+}
+
+.hero-content p {
+  margin: 0 0 28px;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.btn,
+.contact-form button {
+  border: 0;
+  background: var(--orange);
+  color: white;
+  padding: 14px 23px;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.btn:hover,
+.contact-form button:hover {
+  background: var(--orange-dark);
+  transform: translateY(-2px);
+}
+
+/* Recipes */
+.recipes-section {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 30px 0 100px;
+}
+
+.recipes-heading {
+  max-width: 620px;
+  margin-bottom: 38px;
+}
+
+.recipes-heading p {
+  color: var(--muted);
+}
+
+.recipe-layout {
+  display: grid;
+  grid-template-columns: 1.3fr .7fr;
+  grid-template-rows: 260px 260px;
+  gap: 22px;
+}
+
+.recipe-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  background: white;
+}
+
+.large-card {
+  grid-row: 1 / 3;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.recipe-card:hover img {
+  transform: scale(1.06);
+}
+
+.card-copy {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 45px 24px 22px;
+  color: white;
+  background: linear-gradient(transparent, rgba(63, 39, 30, .92));
+}
+
+.card-copy span {
+  color: #ffd4bc;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.card-copy h3 {
+  color: white;
+  margin: 5px 0 4px;
+  font-size: 26px;
+}
+
+.card-copy p {
+  margin: 0;
+  font-size: 13px;
+  color: #f6e9df;
+}
+
+/* About: title left, text center, photo right */
+.about-section {
+  width: 100%;
+  padding: 95px max(20px, calc((100% - 1180px) / 2));
+  background: var(--red);
+  color: white;
+  display: grid;
+  grid-template-columns: .65fr 1fr .85fr;
+  gap: 48px;
+  align-items: center;
+  scroll-margin-top: 20px;
+}
+
+.about-section .tag {
+  color: #ffd2b7;
+}
+
+.about-section h2 {
+  color: white;
+}
+
+.about-text {
+  color: #fff1e9;
+  font-size: 16px;
+}
+
+.about-text p:first-child {
+  margin-top: 0;
+}
+
+.about-photo {
+  overflow: hidden;
+  border-radius: 140px 140px 24px 24px;
+}
+
+.about-photo img {
+  height: 430px;
+  object-fit: cover;
+}
+
+/* Contact: form left, note right */
+.contact-section {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 105px 0;
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 55px;
+  align-items: stretch;
+  scroll-margin-top: 20px;
+}
+
+.contact-form-wrap {
+  background: white;
+  padding: 42px;
+  border-radius: 24px;
+  box-shadow: 0 14px 45px rgba(78, 52, 46, .07);
+}
+
+.contact-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact-form label {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: #fffaf5;
+  font: inherit;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 3px rgba(230,111,61,.12);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  justify-self: start;
+  margin-top: 6px;
+}
+
+.contact-note {
+  padding: 52px;
+  background: var(--green);
+  color: white;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.contact-note h3 {
+  margin: 0 0 12px;
+  color: white;
+  font-size: 36px;
+}
+
+.contact-note p {
+  margin: 0;
+  color: #edf5ea;
+}
+
+footer {
+  padding: 26px 20px;
+  background: var(--brown);
+  color: #f4dfd0;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero,
+  .about-section,
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image img {
+    min-height: 420px;
+  }
+
+  .recipe-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 340px);
+  }
+
+  .large-card {
+    grid-row: auto;
+  }
+
+  .about-photo img {
+    height: 400px;
+  }
+
+  .contact-note {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    padding: 18px 0;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero-content {
+    padding: 45px 28px;
+  }
+
+  .field-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-wrap,
+  .contact-note {
+    padding: 30px;
+  }
+
+  .about-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}

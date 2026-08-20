@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simple Recipes - easy homemade meals for everyone.">
+  <title>Simple Recipes</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="navbar">
+    <a href="#home" class="logo">Simple Recipes</a>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#recipes">Recipes</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <div class="hero-image">
+      <img src="images/hero-food.jpg" alt="Fresh homemade meal">
+    </div>
+
+    <div class="hero-content">
+      <span class="tag">EASY • TASTY • HOMEMADE</span>
+      <h1>Simple meals for everyday life.</h1>
+      <p>
+        Quick recipes, familiar ingredients, and easy steps
+        to help make home cooking enjoyable.
+      </p>
+      <a href="#recipes" class="btn">See Recipes</a>
+    </div>
+  </header>
+
+  <!-- Recipes -->
+  <section id="recipes" class="recipes-section">
+    <div class="recipes-heading">
+      <span class="tag">FAVORITES</span>
+      <h2>Popular Recipes</h2>
+      <p>Simple recipe ideas for breakfast, lunch, and dinner.</p>
+    </div>
+
+    <div class="recipe-layout">
+
+      <article class="recipe-card large-card">
+        <img src="images/pasta.jpg" alt="Tomato pasta">
+        <div class="card-copy">
+          <span>DINNER</span>
+          <h3>Easy Tomato Pasta</h3>
+          <p>A comforting pasta dinner made with simple pantry ingredients.</p>
+        </div>
+      </article>
+
+      <article class="recipe-card small-card">
+        <img src="images/pancakes.jpg" alt="Fluffy pancakes">
+        <div class="card-copy">
+          <span>BREAKFAST</span>
+          <h3>Fluffy Pancakes</h3>
+          <p>Soft pancakes ready in minutes.</p>
+        </div>
+      </article>
+
+      <article class="recipe-card small-card">
+        <img src="images/salad.jpg" alt="Fresh garden salad">
+        <div class="card-copy">
+          <span>LUNCH</span>
+          <h3>Fresh Garden Salad</h3>
+          <p>Crisp vegetables with a light dressing.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-title">
+      <span class="tag">OUR KITCHEN</span>
+      <h2>About</h2>
+    </div>
+
+    <div class="about-text">
+      <p>
+        Simple Recipes is your destination for easy-to-follow meals that make
+        cooking enjoyable for everyone, whether you are a beginner or an experienced home cook.
+      </p>
+
+      <p>
+        Our goal is to share practical recipes made with everyday ingredients.
+        From comforting family dinners to quick breakfasts and fresh lunches,
+        each recipe is written with clear steps and helpful tips.
+      </p>
+
+      <p>
+        We believe good food does not need to be complicated. Simple Recipes
+        is here to help you cook with confidence and enjoy more homemade meals
+        with the people you care about.
+      </p>
+    </div>
+
+    <div class="about-photo">
+      <img src="images/about-kitchen.jpg" alt="Simple home kitchen">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <div class="contact-form-wrap">
+      <span class="tag">WRITE TO US</span>
+      <h2>Contact</h2>
+
+      <form class="contact-form">
+        <div class="field-row">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" required>
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="6" placeholder="Share your recipe question..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="contact-note">
+      <h3>Let’s talk food.</h3>
+      <p>
+        Have a recipe suggestion, question, or cooking idea?
+        We would love to hear from you.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Simple Recipes</p>
+  </footer>
+
+</body>
+</html>
